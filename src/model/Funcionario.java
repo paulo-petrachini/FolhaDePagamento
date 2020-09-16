@@ -13,6 +13,10 @@ public abstract class Funcionario {
 	
 	public abstract float calcularSalario();
 	
+	public String toString() {
+		return "Nome:   "+nome+" Número de Registro:   "+numeroRegistro;
+	}
+	
 	public String getNome() {
 		return nome;
 	}

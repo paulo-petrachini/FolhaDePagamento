@@ -13,6 +13,10 @@ public class Chefe extends Funcionario {
 		this.beneficioTerno = beneficioTerno;
 	}
 	
+	public String toString() {
+		return "Nome:   "+nome+" Número de Registro:   "+numeroRegistro+" Salário Chefe: "+salarioBase;
+	}
+	
 	@Override
 	public float calcularSalario() {
 		return this.salarioBase = this.salarioBase + (this.salarioBase*adicionalFuncao/100f)+this.beneficioTerno;
